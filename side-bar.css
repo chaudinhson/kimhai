@@ -1,0 +1,90 @@
+.side-bar {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+.side-bar > ul > li > a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: tomato;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.side-bar > ul > li:not(:last-child) {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #ffbe45;
+  border: 1px solid #ccc;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 5px;
+  position: relative;
+}
+.side-bar > ul > li:last-child {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 5px;
+  position: relative;
+  cursor: pointer;
+}
+#zalo-icon,
+#phone-icon {
+  background-color: tomato;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+#mess-icon {
+  background-color: tomato;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#to-top-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.scroll-to-top {
+  cursor: pointer;
+}
+.side-bar > ul > li:last-child > a {
+  background-color: #fff;
+  display: none;
+}
+.animation-zoom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55px;
+  height: 55px;
+  border: 1px solid red;
+  border-radius: 50%;
+  animation: zoom 1.5s infinite;
+  z-index: 0;
+}
+
+@keyframes zoom {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

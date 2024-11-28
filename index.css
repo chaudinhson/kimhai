@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.main-logo {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}
+
+.main-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  background-color: #e40e23e9;
+
+  position: sticky; /* Thanh navbar dính khi cuộn */
+  top: 0; /* Vị trí cố định ở đầu */
+  z-index: 1000; /* Đảm bảo nằm trên các phần tử khác */
+  transition: all 0.5s ease-in-out; /* Thêm hiệu ứng chuyển đổi */
+}
+
+#header.sticky {
+  background-color: #bf1e2e;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+/* slider */
+.item img {
+  width: 100% !important;
+  height: auto !important;
+}
+.slider_banner .item img {
+  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng container */
+}
+
+.slider_banner {
+  overflow: hidden; /* Ngăn các thành phần bên trong tràn ra ngoài */
+}
+.slider_banner .item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slider_banner .banner_content {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.banner_content span {
+  font-weight: 700;
+}
